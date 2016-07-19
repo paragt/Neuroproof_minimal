@@ -29,9 +29,10 @@ The inputs and outputs for the following example are self explanatory. The optio
 build/NeuroProof_stack -watershed watershed2_4class_600000_10_800_1000_1.0_2.h5  stack -prediction  pixel_prediction2_4class_600000_10_800_1000_1.0_2.h5  stack -classifier int_classifier2_600000_1000_800_e5000_1.xml -output /result_600000_800_1_mthd0.35_e500_thd0.3_m4.h5 stack -algorithm 1 -threshold 0.3
 
 
-
 The necesary files are uploaded to Dropbox instead due to filesize limitation.
 
 https://www.dropbox.com/sh/y90ygc8nunpolyw/AADnypNkfF7om067Z3PaXJ9ca?dl=0
+
+Note that the superpixel boundary classifier used in this example is not the optimal one. Therefore, the result may be suboptimal if one uses this particular classifier.
 
 Contact: toufiq.parag@gmail.com

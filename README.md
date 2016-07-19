@@ -12,14 +12,14 @@ Linux: Install miniconda on your workstation. Create and activate the conda envi
 
   conda create -n my_conda_env -c flyem vigra opencv 
 
-  source activate tst_my
+  source activate my_conda_env
 
 Then follow the usual procedure of building:
 
   mkdir build
   cd build
 
-  cmake -DCMAKE_PREFIX_PATH=<CONDA_ENV PATH>/my_conda_env ..
+  cmake -DCMAKE_PREFIX_PATH=[CONDA_ENV_PATH]/my_conda_env ..
 
 # Example
 

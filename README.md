@@ -33,4 +33,4 @@ The necesary files are uploaded to Dropbox instead due to filesize limitation.
 
 https://www.dropbox.com/sh/y90ygc8nunpolyw/AADnypNkfF7om067Z3PaXJ9ca?dl=0
 
-More to come soon.
+Contact: toufiq.parag@gmail.com

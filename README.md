@@ -16,7 +16,7 @@ Linux: Install miniconda on your workstation. Create and activate the conda envi
 
 Then follow the usual procedure of building:
 
-  mkdir build
+  mkdir build \
   cd build
 
   cmake -DCMAKE_PREFIX_PATH=[CONDA_ENV_PATH]/my_conda_env ..

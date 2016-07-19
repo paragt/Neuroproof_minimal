@@ -1,0 +1,9 @@
+Build instructions:
+
+conda create -n tst_my -c flyem vigra opencv 
+
+source activate tst_my
+
+cmake -DCMAKE_PREFIX_PATH=/groups/scheffer/home/paragt/miniconda/envs/tst_my ..
+
+make

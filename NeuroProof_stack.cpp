@@ -277,7 +277,7 @@ int main(int argc, char** argv)
     stackp->compute_vi();  	
  	
     Label * temp_label_volume1D = stackp->get_label_volume();       	    
-     if (!merge_mito)
+     if ((!merge_mito) && (min_region_sz>0))
        stackp->absorb_small_regions2(prediction_ch0, temp_label_volume1D, min_region_sz);
 
     hsize_t dims_out[3];
@@ -299,7 +299,8 @@ int main(int argc, char** argv)
         stackp->compute_vi();  	
  	
         temp_label_volume1D = stackp->get_label_volume();       	    
-         stackp->absorb_small_regions2(prediction_ch0, temp_label_volume1D, min_region_sz);
+        if (min_region_sz>0)
+		stackp->absorb_small_regions2(prediction_ch0, temp_label_volume1D, min_region_sz);
 
         dims_out[0]=depth; dims_out[1]= height; dims_out[2]= width;   
         H5Write(output_filename.c_str(),output_dataset_name.c_str(),3,dims_out, temp_label_volume1D);
